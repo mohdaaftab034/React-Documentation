@@ -1,4 +1,6 @@
-﻿# Common Mistakes
+﻿# Common Mistakes
+
+Language: English
 
 - Mutating state directly.
 - Missing useEffect dependencies.
@@ -13,7 +15,7 @@
 
 ## Code Example
 ### Wrong Way
-`jsx
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -28,10 +30,9 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
+```
 ### Right Way
-`jsx
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -52,8 +53,7 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
+```
 ## Quick Revision
 - Most bugs come from a few patterns.
 - Immutable updates are critical.
@@ -68,3 +68,7 @@ Answer: State and effect misuse.
 Answer: Composition, Context, or store.
 3. Fast review checklist?
 Answer: State immutability, hooks, loading/error.
+
+
+
+

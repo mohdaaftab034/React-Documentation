@@ -97,4 +97,8 @@ flowchart LR
 - [11-interview-prep/03-common-mistakes.md](11-interview-prep/03-common-mistakes.md)
 - [11-interview-prep/04-react-cheatsheet.md](11-interview-prep/04-react-cheatsheet.md)
 
-Great start! We will learn React step by step, together. ðŸŽ‰
+Great start! We will learn React step by step, together. 
+
+
+
+

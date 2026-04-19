@@ -1,34 +1,35 @@
-﻿# 05-component-lifecycle
+﻿# 05-component-lifecycle
 
-## ðŸ” What is it?
+Language: English
+
+## What is it?
 A core React concept explained in simple language for beginners.
 
-## ðŸ¤” Why do we need it?
+## Why do we need it?
 This solves common confusion and makes real app code easier to maintain.
 
-## ðŸ  Real-life analogy
+## Real-life analogy
 Like organizing tools in labeled boxes so you can find things fast.
 
-## âš™ï¸ How does it work?
+## How does it work?
 - Start with the problem.
 - Understand the React idea.
 - See wrong and right code.
 - Use logs and visual output to verify.
 - Practice with tiny examples.
 
-## ðŸ—ºï¸ Diagram
-`mermaid
+## Diagram
+```mermaid
 graph LR
   Input[Input / Event] --> React[React Logic]
   React --> VDOM[Virtual DOM]
   VDOM --> Diff[Diffing]
   Diff --> DOM[Real DOM Update]
   DOM --> Output[Visual Output]
-`
-
-## ðŸ’» Code Example (Wrong then Right)
-### âŒ Wrong Way
-`jsx
+```
+## Code Example
+### Wrong Way
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -43,10 +44,9 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
-### âœ… Right Way
-`jsx
+```
+### Right Way
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -67,34 +67,33 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
-## ðŸ”´ Common Mistakes
+```
+## Common Mistakes
 Skipping fundamentals and copying code blindly.
 
-## âœ… Best Practices
+## Best Practices
 Read, run, modify, and observe outcomes.
 
-## ðŸ§  When to use it?
+## When to use it?
 Use this whenever building similar UI or data flow patterns.
 
-## ðŸ”— Related concepts
+## Related concepts
 - [../README.md](../README.md)
 
-## ðŸ’¡ Pro Tip
+## Pro Tip
 Build the smallest possible example first. Then add one small improvement.
 
-## âš ï¸ Watch Out
+## Watch Out
 Don't panic! If this feels hard, run the sample and read logs one line at a time.
 
-## ðŸ“ Quick Revision
+## Quick Revision
 - This concept solves a real React problem.
 - We compared wrong and right approaches.
 - The sample is copy-paste ready.
 - Visual output and logs confirm behavior.
 - Small components are easier to maintain.
 
-## ðŸŽ¯ Interview Questions
+## Interview Questions
 1. What problem does this concept solve?
 Answer: It improves structure, predictability, and UI reliability.
 2. What is one beginner mistake here?
@@ -104,9 +103,13 @@ Answer: When a simpler approach already solves the problem.
 4. How do you verify it works?
 Answer: Check browser output and console.log behavior.
 
-## ðŸ“Š componentDidMount / useEffect Comparison Table
+## componentDidMount / useEffect Comparison Table
 | Goal | Class Component | Functional Component |
 |---|---|---|
 | After first render | componentDidMount | useEffect(() => {}, []) |
 | After updates | componentDidUpdate | useEffect(() => {}, [deps]) |
 | Cleanup on unmount | componentWillUnmount | useEffect(() => () => cleanup, []) |
+
+
+
+

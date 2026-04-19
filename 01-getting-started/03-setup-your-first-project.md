@@ -1,30 +1,34 @@
-﻿# Setup Your First Project
+﻿# Setup Your First Project
 
-## ðŸ” What is it?
+Language: English
+
+## What is it?
 Vite is a fast tool to start modern React apps.
 
-## ðŸ¤” Why do we need it?
+## Why do we need it?
 You need quick setup to focus on learning React, not build configs.
 
-## ðŸ  Real-life analogy
+## Real-life analogy
 Like moving into a ready kitchen before cooking.
 
-## âš™ï¸ How does it work?
-- Install Node.js.`n- Run npm create vite@latest.`n- Choose React template.`n- npm install and npm run dev.
+## How does it work?
+- Install Node.js.
+- Run npm create vite@latest.
+- Choose React template.
+- npm install and npm run dev.
 
-## ðŸ—ºï¸ Diagram
-`mermaid
+## Diagram
+```mermaid
 graph LR
   Input[Input / Event] --> React[React Logic]
   React --> VDOM[Virtual DOM]
   VDOM --> Diff[Diffing]
   Diff --> DOM[Real DOM Update]
   DOM --> Output[Visual Output]
-`
-
-## ðŸ’» Code Example (Wrong then Right)
-### âŒ Wrong Way
-`jsx
+```
+## Code Example
+### Wrong Way
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -39,10 +43,9 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
-### âœ… Right Way
-`jsx
+```
+### Right Way
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -63,34 +66,33 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
-## ðŸ”´ Common Mistakes
+```
+## Common Mistakes
 Using outdated CRA tutorials for new apps.
 
-## âœ… Best Practices
+## Best Practices
 Use Vite for new React projects.
 
-## ðŸ§  When to use it?
+## When to use it?
 Use whenever starting a new project.
 
-## ðŸ”— Related concepts
+## Related concepts
 - [04-jsx-explained.md](04-jsx-explained.md)
 
-## ðŸ’¡ Pro Tip
+## Pro Tip
 Build the smallest possible example first. Then add one small improvement.
 
-## âš ï¸ Watch Out
+## Watch Out
 Don't panic! If this feels hard, run the sample and read logs one line at a time.
 
-## ðŸ“ Quick Revision
+## Quick Revision
 - This concept solves a real React problem.
 - We compared wrong and right approaches.
 - The sample is copy-paste ready.
 - Visual output and logs confirm behavior.
 - Small components are easier to maintain.
 
-## ðŸŽ¯ Interview Questions
+## Interview Questions
 1. What problem does this concept solve?
 Answer: It improves structure, predictability, and UI reliability.
 2. What is one beginner mistake here?
@@ -99,3 +101,7 @@ Answer: Mixing concerns and not following React flow.
 Answer: When a simpler approach already solves the problem.
 4. How do you verify it works?
 Answer: Check browser output and console.log behavior.
+
+
+
+

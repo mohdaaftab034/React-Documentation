@@ -1,30 +1,34 @@
-﻿# How React Works
+﻿# How React Works
 
-## ðŸ” What is it?
+Language: English
+
+## What is it?
 React uses Virtual DOM diffing to update the browser efficiently.
 
-## ðŸ¤” Why do we need it?
+## Why do we need it?
 Manual DOM updates are slow and hard to maintain in large apps.
 
-## ðŸ  Real-life analogy
+## Real-life analogy
 Like editing a draft before printing the final version.
 
-## âš™ï¸ How does it work?
-- React builds a Virtual DOM tree.`n- State changes create a new tree.`n- React compares old/new trees.`n- Only real changes hit real DOM.
+## How does it work?
+- React builds a Virtual DOM tree.
+- State changes create a new tree.
+- React compares old/new trees.
+- Only real changes hit real DOM.
 
-## ðŸ—ºï¸ Diagram
-`mermaid
+## Diagram
+```mermaid
 graph LR
   Input[Input / Event] --> React[React Logic]
   React --> VDOM[Virtual DOM]
   VDOM --> Diff[Diffing]
   Diff --> DOM[Real DOM Update]
   DOM --> Output[Visual Output]
-`
-
-## ðŸ’» Code Example (Wrong then Right)
-### âŒ Wrong Way
-`jsx
+```
+## Code Example
+### Wrong Way
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -39,10 +43,9 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
-### âœ… Right Way
-`jsx
+```
+### Right Way
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -63,34 +66,33 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
-## ðŸ”´ Common Mistakes
+```
+## Common Mistakes
 Thinking state updates are synchronous instantly.
 
-## âœ… Best Practices
+## Best Practices
 Use render mindset: UI = f(state).
 
-## ðŸ§  When to use it?
+## When to use it?
 Use when debugging rerenders and performance.
 
-## ðŸ”— Related concepts
+## Related concepts
 - [../08-performance/05-virtual-dom-explained.md](../08-performance/05-virtual-dom-explained.md)
 
-## ðŸ’¡ Pro Tip
+## Pro Tip
 Build the smallest possible example first. Then add one small improvement.
 
-## âš ï¸ Watch Out
+## Watch Out
 Don't panic! If this feels hard, run the sample and read logs one line at a time.
 
-## ðŸ“ Quick Revision
+## Quick Revision
 - This concept solves a real React problem.
 - We compared wrong and right approaches.
 - The sample is copy-paste ready.
 - Visual output and logs confirm behavior.
 - Small components are easier to maintain.
 
-## ðŸŽ¯ Interview Questions
+## Interview Questions
 1. What problem does this concept solve?
 Answer: It improves structure, predictability, and UI reliability.
 2. What is one beginner mistake here?
@@ -99,3 +101,7 @@ Answer: Mixing concerns and not following React flow.
 Answer: When a simpler approach already solves the problem.
 4. How do you verify it works?
 Answer: Check browser output and console.log behavior.
+
+
+
+

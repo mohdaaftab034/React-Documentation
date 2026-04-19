@@ -1,30 +1,34 @@
-﻿# What Is React?
+﻿# What Is React?
 
-## ðŸ” What is it?
+Language: English
+
+## What is it?
 React is a JavaScript library for building UI with reusable components.
 
-## ðŸ¤” Why do we need it?
+## Why do we need it?
 Big apps become messy in plain JS and DOM updates. React brings structure.
 
-## ðŸ  Real-life analogy
+## Real-life analogy
 React is like LEGO blocks for UI.
 
-## âš™ï¸ How does it work?
-- Split UI into components.`n- Components return JSX.`n- State/props changes trigger rerender.`n- React updates only changed DOM parts.
+## How does it work?
+- Split UI into components.
+- Components return JSX.
+- State/props changes trigger rerender.
+- React updates only changed DOM parts.
 
-## ðŸ—ºï¸ Diagram
-`mermaid
+## Diagram
+```mermaid
 graph LR
   Input[Input / Event] --> React[React Logic]
   React --> VDOM[Virtual DOM]
   VDOM --> Diff[Diffing]
   Diff --> DOM[Real DOM Update]
   DOM --> Output[Visual Output]
-`
-
-## ðŸ’» Code Example (Wrong then Right)
-### âŒ Wrong Way
-`jsx
+```
+## Code Example
+### Wrong Way
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -39,10 +43,9 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
-### âœ… Right Way
-`jsx
+```
+### Right Way
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -63,34 +66,34 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
-## ðŸ”´ Common Mistakes
+```
+## Common Mistakes
 Treating React like a full framework instead of a UI library.
 
-## âœ… Best Practices
+## Best Practices
 Use small reusable components and clear data flow.
 
-## ðŸ§  When to use it?
+## When to use it?
 Use it for interactive apps with reusable UI.
 
-## ðŸ”— Related concepts
-- [02-how-react-works.md](02-how-react-works.md)`n- [04-jsx-explained.md](04-jsx-explained.md)
+## Related concepts
+- [02-how-react-works.md](02-how-react-works.md)
+- [04-jsx-explained.md](04-jsx-explained.md)
 
-## ðŸ’¡ Pro Tip
+## Pro Tip
 Build the smallest possible example first. Then add one small improvement.
 
-## âš ï¸ Watch Out
+## Watch Out
 Don't panic! If this feels hard, run the sample and read logs one line at a time.
 
-## ðŸ“ Quick Revision
+## Quick Revision
 - This concept solves a real React problem.
 - We compared wrong and right approaches.
 - The sample is copy-paste ready.
 - Visual output and logs confirm behavior.
 - Small components are easier to maintain.
 
-## ðŸŽ¯ Interview Questions
+## Interview Questions
 1. What problem does this concept solve?
 Answer: It improves structure, predictability, and UI reliability.
 2. What is one beginner mistake here?
@@ -99,3 +102,7 @@ Answer: Mixing concerns and not following React flow.
 Answer: When a simpler approach already solves the problem.
 4. How do you verify it works?
 Answer: Check browser output and console.log behavior.
+
+
+
+

@@ -1,5 +1,7 @@
 ﻿# Top 50 React Questions
 
+Language: English
+
 1. React interview question 1. Answer: Short practical explanation with one example.
 2. React interview question 2. Answer: Short practical explanation with one example.
 3. React interview question 3. Answer: Short practical explanation with one example.
@@ -65,3 +67,7 @@ Answer: Practice categories and examples.
 Answer: 20-40 seconds with one example.
 3. What if stuck?
 Answer: Start with definition, then use case.
+
+
+
+

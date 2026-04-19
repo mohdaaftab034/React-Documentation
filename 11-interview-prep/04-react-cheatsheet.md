@@ -1,4 +1,6 @@
-﻿# React Cheatsheet
+﻿# React Cheatsheet
+
+Language: English
 
 ## Hooks
 - useState
@@ -36,3 +38,7 @@ Answer: Components, hooks, state flow.
 Answer: Build real projects + testing.
 3. Best revision method?
 Answer: Daily cheatsheet + mini coding.
+
+
+
+

@@ -1,4 +1,6 @@
-﻿# Coding Challenges
+﻿# Coding Challenges
+
+Language: English
 
 1. Counter with step.
 2. Search filter list.
@@ -6,9 +8,9 @@
 4. Theme toggle with context.
 5. Shopping cart reducer.
 
-## Code Example (Wrong then Right)
+## Code Example
 ### Wrong Way
-`jsx
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -23,10 +25,9 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
+```
 ### Right Way
-`jsx
+```jsx
 import { useState } from "react"; // import hook
 
 const Demo = () => { // component
@@ -47,8 +48,7 @@ const Demo = () => { // component
 }; // end component
 
 export default Demo; // export
-`
-
+```
 ## Quick Revision
 - Break problems into small tasks.
 - Define state shape first.
@@ -63,3 +63,7 @@ Answer: Clarify requirements then define state.
 Answer: Correct behavior and readable code.
 3. How to stand out?
 Answer: Mention tradeoffs and testing.
+
+
+
+
